@@ -42,14 +42,15 @@ function renderDucks() {
   let duck1 = selectRandomDuckNumber(); // 5
   let duck2 = selectRandomDuckNumber(); // 5
   let duck3 = selectRandomDuckNumber(); // 5
-  console.log(duck1, duck2);
+  console.log(duck1, duck2, duck3);
   // as long as duck1 === duck2 we need a new number for duck2
+    let selectImage = []
+
   while (duck1 === duck2) {
     duck2 = selectRandomDuckNumber(); // 5
-    console.log(duck1, duck2);
+    console.log(duck1, duck2);0
   }
-//   while (duck1 != duck2)
-  duck1 
+
   // seriously consider using an array — you can push things to an array
   // remember: how do you find if an array includes something?
   // look it up - Google
