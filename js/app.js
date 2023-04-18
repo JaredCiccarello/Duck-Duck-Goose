@@ -1,4 +1,5 @@
 let duckArray = [];
+let imageIndex = []
 
 let myContainer = document.querySelector('section');
 
@@ -18,7 +19,7 @@ function Duck(name, fileExtension = 'jpg') {
   this.votes = 0;
 }
 // These are your instances
-let bags = new Duck('bags');
+let bag = new Duck('bag');
 let banana = new Duck('banana');
 let bathroom = new Duck('bathroom');
 let boots = new Duck('boots');
@@ -26,7 +27,7 @@ let breakfast = new Duck('breakfast');
 let bubblegum = new Duck('bubblegum');
 let chair = new Duck('chair');
 
-duckArray.push(bags, banana, bathroom, boots, breakfast, bubblegum, chair);
+duckArray.push(bag, banana, bathroom, boots, breakfast, bubblegum, chair);
 
 // console.log(duckArray);
 
@@ -39,9 +40,27 @@ function selectRandomDuckNumber() {
 // - update the DOM (change duck photos in the DOM)
 //     - increment the number of views on the ducks
 function renderDucks() {
-  let duck1 = selectRandomDuckNumber(); // 5
-  let duck2 = selectRandomDuckNumber(); // 5
-  let duck3 = selectRandomDuckNumber(); // 5
+  
+  
+  
+  
+  
+  while (imageIndex.length < 6) {
+    // get random number included in duck array
+    let random = selectRandomDuckNumber();
+    // while that random number is included in the image index array
+    while (imageIndex.includes(random)) {
+      // get a new random number included in duck array
+      random = selectRandomDuckNumber();
+      // Break out of loop when random number is not included in index array
+    }
+    // We know we have a unique random number, which we push into the array.
+    imageIndex.push(random)
+  }
+  console.log(imageIndex)
+  let duck1 = imageIndex.shift(); // 5
+  let duck2 = imageIndex.shift(); // 5
+  let duck3 = imageIndex.shift(); // 5
   console.log(duck1, duck2, duck3);
   // as long as duck1 === duck2 we need a new number for duck2
     let selectImage = []
@@ -103,3 +122,5 @@ function viewResults() {
   }
 }
 renderDucks();
+
+myContainer.addEventListener('click', handleDuckClick);
