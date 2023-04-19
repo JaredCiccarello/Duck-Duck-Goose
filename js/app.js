@@ -1,4 +1,5 @@
 let duckArray = [];
+let imageIndex = [];
 
 let myContainer = document.querySelector('section');
 
@@ -9,7 +10,7 @@ let image3 = document.querySelector('section img:nth-child(3)');
 let viewResultsBtn = document.querySelector('section ~ div')
 
 let counter = 0;
-let maxCounter = 25;
+let maxCounter = 5;
 
 function Duck(name, fileExtension = 'jpg') {
   this.name = name;
@@ -17,7 +18,7 @@ function Duck(name, fileExtension = 'jpg') {
   this.views = 0;
   this.votes = 0;
 }
-// These are your instances
+// These are your instances: 19
 let bag = new Duck('bag');
 let banana = new Duck('banana');
 let bathroom = new Duck('bathroom');
@@ -25,8 +26,21 @@ let boots = new Duck('boots');
 let breakfast = new Duck('breakfast');
 let bubblegum = new Duck('bubblegum');
 let chair = new Duck('chair');
+let cthulhu = new Duck('cthulu');
+let dogduck = new Duck('dogduck');
+let dragon = new Duck('dragon');
+let pen = new Duck('pen');
+let petsweep = new Duck('petsweep');
+let scissors = new Duck('scissors');
+let shark = new Duck('shark');
+// What's going on here???
+let sweep = new Duck('sweep', 'png');
+let tauntaun = new Duck('tauntaun');
+let unicorn = new Duck('unicorn');
+let watercan = new Duck('watercan');
+let wineglass = new Duck('wineglass');
 
-duckArray.push(bag, banana, bathroom, boots, breakfast, bubblegum, chair);
+duckArray.push(bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulhu, dogduck, dragon, pen, petsweep, scissors, shark, sweep, tauntaun, unicorn, watercan, wineglass);
 
 // console.log(duckArray);
 
@@ -38,10 +52,6 @@ function selectRandomDuckNumber() {
 // - update the DOM (change duck photos in the DOM)
 //     - increment the number of views on the ducks
 function renderDucks() {
-  
-  
-  
-  
   
   while (imageIndex.length < 6) {
     // get random number included in duck array
@@ -81,35 +91,7 @@ function renderDucks() {
   image3.src = duckArray[duck3].src;
   image3.alt = duckArray[duck3].name;
   duckArray[duck3].views++;
-=======
-
-  while (indexArray.length < 4) {
-    let randomNum = selectRandomDuckNumber
-      // We do not want this array running true. If true value is already in array. Which is empty. So put !. This returns the array as false.
-    if (!indexArray.includes(randomNum)) {
-      // does haystick.includes(needle)
-      // This array shows us whether a value is in our array or not
-      indexArray.push(randomNum);
-    }
-  }
   
-
-  // We use shift because it grabs our numbers from ?????
-  let imageOne = indexArray.shift(); // 5
-  let imageTwo = indexArray.shift(); // 5
-  let imageThree = indexArray.shift(); // 5
-
-
-  image1.src = duckArray[imageOne].src;
-  image1.alt = duckArray[imageOne].name;
-  duckArray[imageOne].views++;
-  image2.src = duckArray[imageTwo].src;
-  image2.alt = duckArray[imageTwo].name;
-  duckArray[imageTwo].views++;
-  image3.src = duckArray[imageThree].src;
-  image3.alt = duckArray[imageThree].name;
-  duckArray[imageThree].views++;
-  // console.log(duckArray);
 }
 
 // - handle duck clicks
@@ -150,7 +132,10 @@ function viewResults() {
 renderDucks();
 
 myContainer.addEventListener('click', handleDuckClick);
-=======
+
+
+
+
 
 // We use render because ???? 
 function renderChart() {
@@ -176,5 +161,5 @@ function renderChart() {
 }
 renderDucks();
 
-myContainer.addEventListener('click', handleGoatClick);
+myContainer.addEventListener('click', handleDuckClick);
 
