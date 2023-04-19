@@ -4,30 +4,29 @@
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: cornsilk;
-  color: saddlebrown;
+  background-color: rgb(253, 220, 255);
+  color: rgba(97, 60, 42, 0.43);
 }
 
 h1 {
-  font-size: 5rem;
-  color: rosybrown;
-  line-height: .8;
-  margin: 3rem 0 1rem;
-  grid-column-start: 2;
+  font-size: 3rem;
+  color: yellow;
+  line-height: 1.2;
+  margin: 1rem;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  font-family:fantasy
 }
 
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
+/* h1 {
+  font-size: 5rem;
+  color: #142632;
+  margin: 5rem  6rem;
+  font-family: 'Astloch', cursive;
+  justify-self: center;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+  vertical-align: middle;
+} */
 
 main {
   width: 1024px;
@@ -63,7 +62,7 @@ section img {
 }
 
 section img:hover {
-  border: 5px solid rgb(169, 108, 28);
+  border: 10px solid rgb(28, 35, 169);
   cursor: pointer;
 }
 
@@ -73,11 +72,17 @@ ul {
 
 /* -- button -- */
 section + div {
-  background-color: rgba(128, 128, 128, 0.734);
-  color: lightgrey;
+  background-color: rgba(128, 128, 128, 0.618);
+  color: rgb(211, 211, 211);
   padding: .5rem 1rem;
   width: max-content;
   height: max-content;
   font-size: .8rem;
   margin: 1rem;
+}
+.glow-on-hover {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  
 }
