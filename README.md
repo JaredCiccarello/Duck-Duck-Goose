@@ -12,6 +12,5 @@ Arthur Francisco
 
 
 Issues
-Photos not supposed to repeat
-Console random numbers not showing a third number
 View results button not working
+Scroll bar
