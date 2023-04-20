@@ -39,7 +39,7 @@ let image3 = document.querySelector('section img:nth-child(3)');
 let viewResultsBtn = document.querySelector('section ~ div')
 
 let counter = 0;
-let maxCounter = 5;
+let maxCounter = 25;
 
 function Duck(name, fileExtension = 'jpg') {
   this.name = name;
