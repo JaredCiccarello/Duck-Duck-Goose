@@ -1,4 +1,6 @@
-# Duck-Duck-Goose
+# Odd-duck
+
+![2023-04-19](https://user-images.githubusercontent.com/126429063/233239433-7f51ae3e-ad3e-42d5-98c7-15aa2cbb7e16.png)
 
 Resources and collaborators
 
