@@ -4,8 +4,8 @@
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(253, 220, 255);
-  color: rgba(97, 60, 42, 0.43);
+  background-color: rgb(225, 220, 255);
+  color: rgba(42, 47, 97, 0.712);
 }
 
 h1 {
@@ -27,6 +27,11 @@ h1 {
   display: inline-block;
   vertical-align: middle;
 } */
+
+p {
+  color: rgb(216, 142, 112);
+}
+
 
 main {
   width: 1024px;
@@ -66,6 +71,11 @@ section img {
   grid-row-start: 4;
   grid-column-start: 2;
 }
+/* 
+.myChart {
+  grid-column-start: 1; 
+  grid-column-end: 2;
+} */
 
 section img:hover {
   border: 10px solid rgb(28, 35, 169);
